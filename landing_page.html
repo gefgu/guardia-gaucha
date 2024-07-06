@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +13,11 @@
       type="image/x-icon"
       href="/imgs/android-chrome-512x512.png"
     />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body class="bg-white font-sans leading-normal tracking-normal">
     <!-- Navbar -->
@@ -22,6 +27,9 @@
         <!-- <span class="text-lg font-bold">GG</span> -->
       </div>
       <div class="flex items-center space-x-4 ml-4">
+        <a href="#nosso-objetivo" class="text-gray-700 hover:text-gray-900"
+          >Nosso Objetivo</a
+        >
         <a href="#beneficios" class="text-gray-700 hover:text-gray-900"
           >Benefícios</a
         >
@@ -55,6 +63,43 @@
       <button class="px-8 py-4 bg-blue-600 text-white rounded-md mt-8">
         Teste Agora
       </button>
+    </section>
+
+    <!-- Nosso Objetivo Section -->
+    <section class="container mx-auto px-4 py-16 my-24" id="nosso-objetivo">
+      <div class="text-center mb-8 flex flex-col gap-8 mb-14">
+        <h1 class="text-4xl font-bold text-gray-800">Nosso Objetivo</h1>
+        <p class="text-xl text-gray-600 text-justify leading-8">
+          O objetivo do aplicativo Guardiã Gaúcha é proporcionar um sistema de
+          monitoramento e coordenação de salvamento altamente eficaz em casos de
+          desastres naturais no Rio Grande do Sul. Este aplicativo visa proteger
+          vidas, garantindo uma resposta rápida e eficiente em situações de
+          emergência, como enchentes e tempestades.
+        </p>
+        <p class="text-xl text-gray-600 text-justify leading-8">
+          A inovação do Guardiã Gaúcha está em seu sistema de monitoramento
+          baseado em uma grade hexagonal. Este sistema permite uma cobertura
+          mais precisa e detalhada do território, facilitando a identificação de
+          áreas de risco e a disseminação de alertas em tempo real. A estrutura
+          hexagonal oferece diferentes tamanhos de células, permitindo uma
+          variedade de aplicações que vão desde a vigilância de grandes áreas
+          até o monitoramento detalhado de regiões específicas. Diferente dos
+          métodos tradicionais, essa flexibilidade aumenta a resolução do
+          monitoramento e possibilita uma gestão mais eficiente dos recursos de
+          resgate.
+        </p>
+        <p class="text-xl text-gray-600 text-justify leading-8">
+          Além disso, o Guardiã Gaúcha se destaca por sua transparência ao
+          mostrar em tempo real as ações das equipes de resgate, como os
+          bombeiros, que podem utilizaz a plataforma para guiar suas operações.
+          Com mapas interativos e pontos de apoio claramente delineados, o
+          aplicativo proporciona informações claras e acessíveis tanto para os
+          profissionais de resgate quanto para a população. Essa combinação de
+          tecnologia avançada e foco na transparência torna o Guardiã Gaúcha uma
+          ferramenta única e indispensável para a gestão de emergências no Rio
+          Grande do Sul.
+        </p>
+      </div>
     </section>
 
     <!-- Benefits Section -->
