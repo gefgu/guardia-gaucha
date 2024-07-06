@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guardiã Gaúcha</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white font-sans leading-normal tracking-normal">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-around p-6 bg-white shadow-md">
+      <div class="flex items-center space-x-4">
+        <img src="logo.png" alt="Logo" class="h-8 w-8" />
+        <!-- <span class="text-lg font-bold">GG</span> -->
+      </div>
+      <div class="flex items-center space-x-4 ml-4">
+        <a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">How it Works</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Benefits</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Reviews</a>
+        <!-- <button class="px-4 py-2 bg-blue-600 text-white rounded-md">
+        Login
+      </button> -->
+        <button
+          class="px-4 py-2 border border-gray-300 text-gray-700 rounded-md"
+        >
+          Experimente
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 bg-white">
+      <h1 class="text-5xl font-bold mb-4">Guardiã Gaúcha</h1>
+      <h2 class="text-4xl font-bold mb-4">A Força do Sul Contra Desastres.</h2>
+      <div class="mt-8 flex justify-center">
+        <img
+          src="imgs/dashboard.png"
+          alt="Dashboard Screenshot"
+          class="rounded-lg shadow-lg max-w-full h-auto"
+          style="max-height: 400px"
+        />
+      </div>
+      <button class="px-8 py-4 bg-blue-600 text-white rounded-md mt-8">
+        Teste Agora
+      </button>
+    </section>
+
+    <!-- Benefits Section -->
+    <div class="container mx-auto px-4 py-16">
+      <div class="text-center mb-8 flex flex-col gap-4 mb-8">
+        <h1 class="text-4xl font-bold text-gray-800">Nossos Benefícios</h1>
+        <p class="text-xl text-gray-600">
+          Descubra todos os benefícios que nosso app oferece para manter você e
+          sua região seguros.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="p-4 border border-gray-200 rounded-lg shadow-md bg-white">
+          <h3 class="text-lg font-medium mb-2">
+            Alertas Precisos e Tempestivos
+          </h3>
+          <p class="text-gray-600">
+            Fornecer alertas em tempo real sobre desastres naturais, garantindo
+            que a população receba informações precisas e rápidas para tomar
+            medidas de segurança.
+          </p>
+          <a
+            href="#"
+            class="text-indigo-500 hover:text-indigo-700 underline mt-4 inline-block"
+            >Learn more</a
+          >
+        </div>
+
+        <div class="p-4 border border-gray-200 rounded-lg shadow-md bg-white">
+          <h3 class="text-lg font-medium mb-2">
+            Coordenação Eficiente de Resgate:
+          </h3>
+          <p class="text-gray-600">
+            Facilitar a coordenação entre equipes de resgate, voluntários e
+            autoridades locais, otimizando os esforços de resposta em
+            emergências.
+          </p>
+          <a
+            href="#"
+            class="text-indigo-500 hover:text-indigo-700 underline mt-4 inline-block"
+            >Learn more</a
+          >
+        </div>
+
+        <div class="p-4 border border-gray-200 rounded-lg shadow-md bg-white">
+          <h3 class="text-lg font-medium mb-2">Informação e Educação:</h3>
+          <p class="text-gray-600">
+            Promover a conscientização pública sobre medidas preventivas e
+            procedimentos de evacuação, educando a comunidade sobre como agir
+            durante desastres naturais.
+          </p>
+          <a
+            href="#"
+            class="text-indigo-500 hover:text-indigo-700 underline mt-4 inline-block"
+            >Learn more</a
+          >
+        </div>
+
+        <div class="p-4 border border-gray-200 rounded-lg shadow-md bg-white">
+          <h3 class="text-lg font-medium mb-2">Melhoria Contínua:</h3>
+          <p class="text-gray-600">
+            Coletar feedback da comunidade e atualizar constantemente o
+            aplicativo com novas funcionalidades e melhorias baseadas em
+            experiências passadas e tecnologias emergentes.
+          </p>
+          <a
+            href="#"
+            class="text-indigo-500 hover:text-indigo-700 underline mt-4 inline-block"
+            >Learn more</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <section
+      class="bg-white p-8 shadow-lg rounded-lg max-w-7xl w-full flex flex-col md:flex-row items-center justify-between lg:mx-auto mx-16"
+    >
+      <!-- Text Section -->
+      <div class="md:w-1/2">
+        <h1 class="text-4xl font-bold mb-4">Your Title Here</h1>
+        <p class="text-lg">
+          This is your paragraph. It can contain any text you like, providing
+          details or descriptions as needed. Tailwind CSS makes it easy to style
+          this text with utility classes.
+        </p>
+      </div>
+      <!-- Image Section -->
+      <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+        <img
+          src="your-image-url-here.jpg"
+          alt="Descriptive Alt Text"
+          class="w-full h-auto object-cover rounded-lg"
+        />
+      </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto px-6 py-10">
+      <div class="text-center mb-10">
+        <img
+          src="link-to-image"
+          alt="Imagem Destacada"
+          class="mx-auto w-full md:w-2/3 lg:w-1/2 rounded shadow-md"
+        />
+        <p class="italic text-gray-600 mt-4">
+          Imagem de resgate durante um desastre natural, simbolizando a missão
+          do aplicativo Guardiã Gaúcha.
+        </p>
+      </div>
+
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold text-center text-blue-900 mb-6">
+          Bem-vindo à Guardiã Gaúcha
+        </h2>
+        <p class="text-lg text-gray-700 text-center">
+          Guardiã Gaúcha é um aplicativo inovador de monitoramento e coordenação
+          de salvamento em desastres naturais no Rio Grande do Sul. Utilizando
+          tecnologia de ponta, o app fornece alertas em tempo real sobre
+          enchentes, tempestades e outros eventos críticos.
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h3 class="text-2xl font-bold text-center text-blue-900 mb-6">
+          Recursos do Aplicativo
+        </h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li class="mb-2">
+            <strong>Alertas em Tempo Real:</strong> Receba notificações
+            instantâneas sobre enchentes, tempestades e outros desastres
+            naturais que possam afetar você e sua comunidade.
+          </li>
+          <li class="mb-2">
+            <strong>Comunicação Direta:</strong> Facilite a comunicação entre
+            equipes de resgate e a população, garantindo uma resposta rápida e
+            coordenada.
+          </li>
+          <li class="mb-2">
+            <strong>Mapas Interativos:</strong> Acesse mapas detalhados que
+            mostram áreas afetadas, rotas de evacuação e pontos de apoio.
+          </li>
+          <li class="mb-2">
+            <strong>Rotas de Evacuação:</strong> Planeje e siga rotas seguras
+            para evacuação durante emergências.
+          </li>
+          <li class="mb-2">
+            <strong>Pontos de Apoio:</strong> Encontre abrigos e centros de
+            ajuda próximos a você.
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-10">
+        <h3 class="text-2xl font-bold text-center text-blue-900 mb-6">
+          Nossa Missão
+        </h3>
+        <p class="text-lg text-gray-700 text-center">
+          Proteger vidas e garantir uma resposta rápida e eficiente em situações
+          de emergência é a nossa principal missão. A Guardiã Gaúcha está aqui
+          para ajudar você a estar sempre preparado e informado.
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h3 class="text-2xl font-bold text-center text-blue-900 mb-6">
+          Como Funciona
+        </h3>
+        <ol class="list-decimal list-inside text-gray-700">
+          <li class="mb-2">
+            <strong>Baixe o Aplicativo:</strong> Disponível para iOS e Android.
+          </li>
+          <li class="mb-2">
+            <strong>Configure Seu Perfil:</strong> Adicione suas informações
+            pessoais e preferências de alerta.
+          </li>
+          <li class="mb-2">
+            <strong>Receba Alertas:</strong> Fique informado sobre desastres
+            naturais em tempo real.
+          </li>
+          <li class="mb-2">
+            <strong>Acesse Recursos:</strong> Use nossos mapas interativos,
+            rotas de evacuação e encontre pontos de apoio rapidamente.
+          </li>
+          <li class="mb-2">
+            <strong>Comunique-se:</strong> Mantenha-se em contato direto com
+            equipes de resgate e outros usuários durante emergências.
+          </li>
+        </ol>
+      </section>
+
+      <section class="mb-10">
+        <h3 class="text-2xl font-bold text-center text-blue-900 mb-6">
+          Sobre Nós
+        </h3>
+        <p class="text-lg text-gray-700 text-center">
+          A Guardiã Gaúcha foi desenvolvida com o compromisso de proteger e
+          salvar vidas no Rio Grande do Sul. Nossa equipe é formada por
+          especialistas em tecnologia, segurança e gestão de desastres,
+          trabalhando juntos para oferecer a melhor ferramenta de resposta a
+          emergências.
+        </p>
+      </section>
+
+      <section class="mb-10">
+        <h3 class="text-2xl font-bold text-center text-blue-900 mb-6">
+          Entre em Contato
+        </h3>
+        <p class="text-lg text-gray-700 text-center">
+          Tem dúvidas ou sugestões? Entre em contato conosco!
+        </p>
+        <p class="text-center text-gray-700 mt-2">
+          Email:
+          <a
+            href="mailto:suporte@guardiagaucha.com"
+            class="text-blue-600 underline"
+            >suporte@guardiagaucha.com</a
+          >
+        </p>
+        <p class="text-center text-gray-700">Telefone: +55 (51) 1234-5678</p>
+      </section>
+
+      <section class="text-center">
+        <h3 class="text-2xl font-bold text-blue-900 mb-6">Baixe Agora</h3>
+        <div class="flex justify-center space-x-4">
+          <a href="link-to-app-store">
+            <img
+              src="link-to-app-store-image"
+              alt="Download on the App Store"
+              class="h-12"
+            />
+          </a>
+          <a href="link-to-google-play">
+            <img
+              src="link-to-google-play-image"
+              alt="Get it on Google Play"
+              class="h-12"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-900 text-white py-6">
+      <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2024 Guardiã Gaúcha. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
