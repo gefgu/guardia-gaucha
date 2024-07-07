@@ -14,26 +14,61 @@
       href="/imgs/android-chrome-512x512.png"
     />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
       html {
         scroll-behavior: smooth;
       }
+      h1,
+      h2,
+      p {
+        font-family: "Lora", sans-serif;
+        color: black;
+      }
+      body,
+      section {
+        background: rgb(0, 189, 42);
+        background: linear-gradient(
+          90deg,
+          rgba(0, 189, 42, 1) 5%,
+          rgba(224, 63, 62, 1) 45%,
+          rgba(255, 222, 89, 1) 78%
+        );
+        color: black;
+        backdrop-filter: blur(15px);
+        backdrop-filter: opacity(20%);
+      }
+      footer,
+      nav,
+      #informacao,
+      #alertas,
+      #nosso-objetivo {
+        background: linear-gradient(
+          90deg,
+          rgb(2, 163, 37) 5%,
+          rgb(203, 55, 55) 45%,
+          rgb(211, 183, 70) 78%
+        );
+        color: black;
+        backdrop-filter: blur(70px) opacity(70%) hue-rotate(120deg);
+      }
+      button {
+        background-color: #f3e35e;
+      }
     </style>
   </head>
-  <body class="bg-white font-sans leading-normal tracking-normal">
+  <body class="font-sans leading-normal tracking-normal">
     <!-- Navbar -->
-    <nav class="flex items-center justify-around p-6 bg-white shadow-md">
+    <nav class="flex items-center justify-around p-6 shadow-md">
       <div class="flex items-center space-x-4">
-        <img src="imgs/logo.png" alt="Logo" class="h-18 w-20" />
+        <img src="imgs/logo-heart-nobg.png" alt="Logo" class="h-18 w-20" />
         <!-- <span class="text-lg font-bold">GG</span> -->
       </div>
       <div class="flex items-center space-x-4 ml-4 hidden md:block">
-        <a href="#nosso-objetivo" class="text-gray-700 hover:text-gray-900"
+        <a href="#nosso-objetivo" class="text-black hover:text-white"
           >Nosso Objetivo</a
         >
-        <a href="#beneficios" class="text-gray-700 hover:text-gray-900"
-          >Benefícios</a
-        >
-        <a href="#funcionamento" class="text-gray-700 hover:text-gray-900"
+        <a href="#beneficios" class="text-black hover:text-white">Benefícios</a>
+        <a href="#funcionamento" class="text-black hover:text-white"
           >Como Funciona</a
         >
         <!-- <a href="#" class="text-gray-700 hover:text-gray-900">Reviews</a> -->
@@ -41,7 +76,7 @@
         Login
       </button> -->
         <button
-          class="px-4 py-2 border border-gray-300 text-gray-700 rounded-md"
+          class="py-2 px-4 border border-none rounded-md hover:text-white"
         >
           Experimente
         </button>
@@ -49,7 +84,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="text-center py-16 bg-white">
+    <section class="text-center py-16">
       <h1 class="text-5xl font-bold mb-4">Guardiã Gaúcha</h1>
       <h2 class="text-4xl font-bold mb-4">A Força do Sul Contra Desastres.</h2>
       <div class="mt-8 flex justify-center mx-8 md:mx-0">
@@ -60,7 +95,7 @@
           style="max-height: 400px"
         />
       </div>
-      <button class="px-8 py-4 bg-blue-600 text-white rounded-md mt-8">
+      <button class="px-8 py-4 text-black rounded-md mt-8 hover:text-white">
         Teste Agora
       </button>
     </section>
@@ -68,17 +103,16 @@
     <!-- Nosso Objetivo Section -->
     <section class="container mx-auto px-4 py-16 my-24" id="nosso-objetivo">
       <div
-        class="text-center mb-8 flex flex-col gap-8 md:gap-12 mb-14 md:mb-18"
+        class="text-center mb-8 flex flex-col gap-7 md:gap-12 mb-14 md:mb-18"
       >
-        <h1 class="text-4xl font-bold text-gray-800">Nosso Objetivo</h1>
-        <p class="text-xl text-gray-600 text-justify leading-8">
+        <h1 class="text-4xl font-bold">Nosso Objetivo</h1>
+        <p class="text-lg text-justify mx-auto leading-8 max-w-6xl">
           O objetivo do aplicativo Guardiã Gaúcha é proporcionar um sistema de
           monitoramento e coordenação de salvamento altamente eficaz em casos de
           desastres naturais no Rio Grande do Sul. Este aplicativo visa proteger
           vidas, garantindo uma resposta rápida e eficiente em situações de
           emergência, como enchentes e tempestades.
-        </p>
-        <p class="text-xl text-gray-600 text-justify leading-8">
+          <br />
           A inovação do Guardiã Gaúcha está em seu sistema de monitoramento
           baseado em uma grade hexagonal. Este sistema permite uma cobertura
           mais precisa e detalhada do território, facilitando a identificação de
@@ -89,11 +123,10 @@
           métodos tradicionais, essa flexibilidade aumenta a resolução do
           monitoramento e possibilita uma gestão mais eficiente dos recursos de
           resgate.
-        </p>
-        <p class="text-xl text-gray-600 text-justify leading-8">
+          <br />
           Além disso, o Guardiã Gaúcha se destaca por sua transparência ao
           mostrar em tempo real as ações das equipes de resgate, como os
-          bombeiros, que podem utilizaz a plataforma para guiar suas operações.
+          bombeiros, que podem utilizar a plataforma para guiar suas operações.
           Com mapas interativos e pontos de apoio claramente delineados, o
           aplicativo proporciona informações claras e acessíveis tanto para os
           profissionais de resgate quanto para a população. Essa combinação de
@@ -107,34 +140,34 @@
     <!-- Benefits Section -->
     <div class="container mx-auto px-4 py-16 my-24" id="beneficios">
       <div class="text-center mb-8 flex flex-col gap-4 mb-8">
-        <h1 class="text-4xl font-bold text-gray-800">Nossos Benefícios</h1>
-        <p class="text-xl text-gray-600">
+        <h1 class="text-4xl font-bold">Nossos Benefícios</h1>
+        <p class="text-xl">
           Descubra todos os benefícios que nosso app oferece para manter você e
           sua região seguros.
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
         <div
-          class="p-6 border border-gray-200 rounded-lg shadow-md bg-white flex flex-col gap-4"
+          class="p-6 border-none rounded-lg bg-red-400 shadow-md flex flex-col gap-4"
         >
           <img src="./imgs/icon-alerta.png" alt="Icon" class="w-12 h-12 mb-1" />
           <h3 class="text-lg font-medium mb-2">
             Alertas Precisos e Tempestivos
           </h3>
-          <p class="text-gray-600">
+          <p class="text-black-600">
             Fornecer alertas em tempo real sobre desastres naturais, garantindo
             que a população receba informações precisas e rápidas para tomar
             medidas de segurança.
           </p>
           <a
             href="#alertas"
-            class="text-indigo-500 hover:text-indigo-700 underline mt-4 inline-block"
+            class="text-red-700 hover:text-red-500 mt-4 inline-block"
             >Saiba Mais</a
           >
         </div>
 
         <div
-          class="p-6 border border-gray-200 rounded-lg shadow-md bg-white flex flex-col gap-4"
+          class="p-6 border-none rounded-lg shadow-md bg-yellow-200 flex flex-col gap-4"
         >
           <img
             src="./imgs/icon-resgate.png"
@@ -144,20 +177,20 @@
           <h3 class="text-lg font-medium mb-2">
             Coordenação Eficiente de Resgate
           </h3>
-          <p class="text-gray-600">
+          <p class="text-black-600">
             Facilitar a coordenação entre equipes de resgate, voluntários e
             autoridades locais, otimizando os esforços de resposta em
             emergências.
           </p>
           <a
             href="#resgate"
-            class="text-indigo-500 hover:text-indigo-700 underline mt-4 inline-block"
+            class="text-yellow-500 hover:text-yellow-700 mt-4 inline-block"
             >Saiba Mais</a
           >
         </div>
 
         <div
-          class="p-6 border border-gray-200 rounded-lg shadow-md bg-white flex flex-col gap-4"
+          class="p-6 border-none rounded-lg shadow-md bg-green-300 flex flex-col gap-4"
         >
           <img
             src="./imgs/icon-educacao.png"
@@ -165,20 +198,20 @@
             class="w-12 h-12 mb-1"
           />
           <h3 class="text-lg font-medium mb-2">Informação e Educação</h3>
-          <p class="text-gray-600">
+          <p class="text-black-600">
             Promover a conscientização pública sobre medidas preventivas e
             procedimentos de evacuação, educando a comunidade sobre como agir
             durante desastres naturais.
           </p>
           <a
             href="#informacao"
-            class="text-indigo-500 hover:text-indigo-700 underline mt-4 inline-block"
+            class="text-green-700 hover:text-green-500 mt-4 inline-block"
             >Saiba Mais</a
           >
         </div>
 
         <div
-          class="p-6 border border-gray-200 rounded-lg shadow-md bg-white flex flex-col gap-4"
+          class="p-6 border-none rounded-lg shadow-md bg-gray-200 flex flex-col gap-4"
         >
           <img
             src="./imgs/icon-melhoriacontinua.png"
@@ -186,14 +219,14 @@
             class="w-12 h-12 mb-1"
           />
           <h3 class="text-lg font-medium mb-2">Melhoria Contínua</h3>
-          <p class="text-gray-600">
+          <p class="text-black-600">
             Coletar feedback da comunidade e atualizar constantemente o
             aplicativo com novas funcionalidades e melhorias baseadas em
             experiências passadas e tecnologias emergentes.
           </p>
           <a
             href="#melhoria"
-            class="text-indigo-500 hover:text-indigo-700 underline mt-4 inline-block"
+            class="text-gray-700 hover:text-gray-500 mt-4 inline-block"
             >Saiba Mais</a
           >
         </div>
@@ -229,13 +262,13 @@
         <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
           <iframe
             src="webapp/hexagon_water_levels.html"
-            class="w-full h-96 border-4 border-blue-500 rounded-lg shadow-lg"
+            class="w-full h-96 border-4 border-none rounded-lg shadow-lg"
           ></iframe>
         </div>
       </section>
 
       <section
-        class="bg-white p-8 rounded-lg w-full flex flex-col lg:flex-row items-center justify-between gap-16 max-w-screen-2xl lg:mx-auto mb-36"
+        class="p-8 rounded-lg w-full flex flex-col lg:flex-row items-center justify-between gap-16 max-w-screen-2xl lg:mx-auto mb-36"
         id="resgate"
       >
         <!-- Image Section -->
@@ -244,7 +277,7 @@
         >
           <iframe
             src="webapp/resgate.html"
-            class="w-full h-96 border-4 border-blue-500 rounded-lg shadow-lg"
+            class="w-full h-96 border-4 border-none rounded-lg shadow-lg"
           ></iframe>
         </div>
 
@@ -269,7 +302,7 @@
       </section>
 
       <section
-        class="bg-white p-8 rounded-lg w-full flex flex-col lg:flex-row items-center justify-between gap-16 max-w-screen-2xl lg:mx-auto mb-36"
+        class="p-8 rounded-lg w-full flex flex-col lg:flex-row items-center justify-between gap-16 max-w-screen-2xl lg:mx-auto mb-36"
         id="informacao"
       >
         <!-- Text Section -->
@@ -293,13 +326,13 @@
         <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
           <iframe
             src="webapp/bairros_porto_alegre.html"
-            class="w-full h-96 border-4 border-blue-500 rounded-lg shadow-lg"
+            class="w-full h-96 border-4 border-none rounded-lg shadow-lg"
           ></iframe>
         </div>
       </section>
 
       <section
-        class="bg-white p-8 rounded-lg w-full flex flex-col lg:flex-row items-center justify-between gap-16 max-w-screen-2xl lg:mx-auto mb-36"
+        class="p-8 rounded-lg w-full flex flex-col lg:flex-row items-center justify-between gap-16 max-w-screen-2xl lg:mx-auto mb-36"
         id="melhoria"
       >
         <!-- Image Section -->
@@ -308,7 +341,7 @@
         >
           <iframe
             src="webapp/hexagon_houses.html"
-            class="w-full h-96 border-4 border-blue-500 rounded-lg shadow-lg"
+            class="w-full h-96 border-4 border-none rounded-lg shadow-lg"
           ></iframe>
         </div>
 
@@ -335,7 +368,7 @@
     </div>
 
     <!-- Footer Section -->
-    <footer class="bg-blue-900 text-white py-6 mt-48">
+    <footer class="text-white py-6 mt-48">
       <div class="container mx-auto px-6 text-center">
         <p>&copy; 2024 Guardiã Gaúcha. Todos os direitos reservados.</p>
       </div>
